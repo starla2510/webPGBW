@@ -102,7 +102,7 @@ h1 {
   /* Dikembalikan ke 600px agar rasio panjang gambar proporsional */
   width: 100%;
   /* Ganti background warna lama dengan gambar baru Anda */
-  background-image: url('Floating window.png');
+  background-image: url('floating-window.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -368,7 +368,7 @@ input:focus {
 
 .popup-box {
 
-  background-image: url('Floating window (kata).png');
+  background-image: url('floating-window-kata.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;

@@ -305,7 +305,6 @@ document.getElementById("btn-tutup-kata").addEventListener("click", () => {
 // MULAI VOTING
 
 btnMulaiVoting.addEventListener("click", () => {
-  votingAktif = true;
 
   playerContainer.innerHTML = "";
 
