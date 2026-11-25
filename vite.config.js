@@ -14,7 +14,6 @@ export default defineConfig({
         game1: resolve(__dirname, 'game1.html'),
         game2: resolve(__dirname, 'game2.html'),
         game3: resolve(__dirname, 'game3.html'),
-        game3: resolve(__dirname, 'UNDERCOVER/index'),
       },
     },
   },
