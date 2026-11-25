@@ -106,7 +106,7 @@ nav a {
 #swarm-root {
     position: absolute;
     inset: 0;
-    z-index: 5;
+    z-index: 1;
     /* di atas slide, di bawah tombol swiper dan thumbnail */
     pointer-events: none;
     /* swiper tetap bisa digeser dan diklik */

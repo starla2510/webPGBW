@@ -1,0 +1,102 @@
+
+body {
+  height: auto;
+  background: var(--bg);
+}
+
+.game {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Latar: gambar game yang diburamkan dan digelapkan */
+.game-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px) brightness(.8) grayscale(100%);
+}
+
+.game-body {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 8rem 3rem 5rem;
+  z-index: 6;
+}
+
+.game-body img {
+  width: 45%;
+  border-radius: 16px;
+}
+
+.game-info h1 {
+  margin: 0 0 1rem;
+  font-size: 3rem;
+  color: #d62828;
+}
+
+.game-info p {
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.play {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+.play:hover {
+  background: var(--primary);
+}
+
+/* Tombol kembali, kiri bawah */
+.back {
+  position: fixed;
+  left: 2rem;
+  bottom:2rem;
+  z-index: 20;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+}
+
+.back:hover {
+  border-color: white;
+}
+
+@media (max-width: 768px) {
+  .game-body {
+    flex-direction: column;
+    padding: 7rem 1.5rem 5rem;
+  }
+
+  .game-body img {
+    width: 100%;
+  }
+
+  .game-info h1 {
+    font-size: 2.2rem;
+  }
+
+  .back {
+    left: 0.8rem;
+    bottom: 0.8rem;
+  }
+}
